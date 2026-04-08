@@ -26,7 +26,7 @@ int main() {
     // lê os dados da pessoa
     printf("Nome: ");
     fgets(umaPessoa.nome, sizeof(umaPessoa.nome), stdin);
-    umaPessoa.nome[strcspn(umaPessoa.nome, "\n")] = 0;
+    umaPessoa.nome[strcspn(umaPessoa.nome, "\n")] = '\0';
     printf("Peso: ");
     scanf("%lf", &umaPessoa.peso);
     printf("Altura: ");
